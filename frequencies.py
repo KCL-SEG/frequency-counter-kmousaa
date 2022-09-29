@@ -5,7 +5,7 @@ def frequencies(items):
     frequencies = {}
 
     for i in items:
-        x = string(i)
+        x = str(i)
         if x != frequencies:
             frequencies[x] = 0
 
