@@ -1,15 +1,15 @@
 """Frequencies function."""
-"""ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
     frequencies = {}
 
     for i in items:
         x = str(i)
-        if x != frequencies:
-            frequencies[x] = 0
+        if x in frequencies:
+          frequencies[x] += 1
 
         else:
-            frequencies[x] += 1
+            frequencies[x] = 1
+            print(x , "is new!")
 
     return frequencies
